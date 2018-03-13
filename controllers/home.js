@@ -11,7 +11,7 @@ const config = require('../config');
 const path = require('path');
 const fs = require('fs');
 
-const page = fs.readFileSync(path.join(__dirname, '../public/views/index.html'), 'utf8')
+const page = fs.readFileSync(path.join(__dirname, '../public/views/login.html'), 'utf8')
   .replace('{{version}}', config.version);
 
 module.exports = function* home(next) {
